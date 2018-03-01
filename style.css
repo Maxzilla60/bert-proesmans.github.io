@@ -108,6 +108,7 @@ blockquote {
     margin: 0;
     padding-left: 20px;
 }
+  content: open-quote;
 blockquote:before {
     color: #ccc;
     content: open-quote;
