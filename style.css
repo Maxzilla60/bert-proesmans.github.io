@@ -106,6 +106,7 @@ blockquote {
     border-left: solid 2px hsl(0,0%,50%);
     font-style: italic;
     margin: 0;
+    margin-bottom: 10px;
     padding-left: 20px;
 }
 blockquote:before {
