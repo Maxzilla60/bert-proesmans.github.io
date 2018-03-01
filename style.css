@@ -108,6 +108,17 @@ blockquote {
     margin: 0;
     font-style: italic;
 }
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 5px;
+  vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
 code {
     font-size: 1em;
 }
