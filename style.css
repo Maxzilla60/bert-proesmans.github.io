@@ -108,9 +108,9 @@ blockquote {
     margin: 0;
     font-style: italic;
 }
+  content: open-quote;
 blockquote:before {
   color: #ccc;
-  content: open-quote;
   font-size: 3em;
   line-height: 0.1em;
   margin-right: 5px;
