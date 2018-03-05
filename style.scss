@@ -4,6 +4,7 @@
 @import "variables";
 
 * {
+    box-sizing: border-box;
     color: $textprimary;
 }
 body {
@@ -12,7 +13,28 @@ body {
     margin: auto;
     margin-bottom: 50px;
     margin-top: 20px;
-    width: 800px;
+}
+.container {
+    display: flex;
+    margin: auto;
+    width: 1000px;
+}
+aside {
+    //border-left: solid 3px $primary;
+    //height: fit-content;
+    background-color: $secondary;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    float: right;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-left: 20px;
+    padding: 20px;
+    width: 25%;
+}
+.posts {
+    width: 75%;
 }
 a {
     color: $primary;
@@ -77,6 +99,7 @@ nav a {
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
     line-height: 1.5;
     padding: 25px;
+    width: 100%;
 }
 .post h1 {
 	text-align: center;
@@ -112,6 +135,8 @@ nav a {
     display: block;
     font-family: "Lucida Console", Monaco, monospace;
     margin-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding: 10px;
     text-align: center;
 }
@@ -146,6 +171,26 @@ blockquote p {
 }
 code {
     font-size: 1em;
+}
+
+/* Wide Screen */
+@media all and (min-width: 1200) {
+
+}
+
+/* Small Screen */
+@media all and (max-width: 1000px) {
+    aside {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    .posts {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+    }
 }
 
 @import "highlights";
