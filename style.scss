@@ -4,7 +4,8 @@
 @import "variables";
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     color: $textprimary;
 }
 body {
@@ -15,6 +16,8 @@ body {
     margin-top: 20px;
 }
 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: auto;
     width: 1000px;
@@ -25,7 +28,8 @@ aside {
     background-color: $secondary;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+            box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
     float: right;
     font-size: 0.9em;
     line-height: 1.5;
@@ -55,8 +59,12 @@ header {
     margin-top: 20px;
 }
 .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 .header-content a {
@@ -84,11 +92,13 @@ nav {
     font-size: 18px;
     font-weight: bold;
     margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 nav a {
-	margin-left: 10px;
-	margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .post {
@@ -96,13 +106,14 @@ nav a {
     border-left: solid 3px $primary;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+            box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
     line-height: 1.5;
     padding: 25px;
     width: 100%;
 }
 .post h1 {
-	text-align: center;
+    text-align: center;
 }
 .post h1 a {
     color: $textprimary;
@@ -132,7 +143,8 @@ nav a {
     background-color: $secondary;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+            box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
     display: block;
     font-family: "Lucida Console", Monaco, monospace;
     margin-bottom: 20px;
@@ -142,7 +154,7 @@ nav a {
     text-align: center;
 }
 .read-more:hover {
-	background-color: $lightprimary;
+    background-color: $lightprimary;
 }
 .date {
     color: $textsecondary;
