@@ -131,7 +131,6 @@ nav a {
     margin-top: 10px;
 }
 .entry h1 {
-    font-size: 1.3em;
     text-align: left;
 }
 .entry a {
@@ -201,6 +200,10 @@ code {
         margin-left: 20px;
         margin-right: 20px;
         width: 100%;
+    }
+    .page {
+        width: 95%;
+        margin: auto;
     }
 }
 
