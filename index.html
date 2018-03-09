@@ -5,13 +5,10 @@ layout: default
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
-
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
       <div class="entry description">
         {{ post.description }}
       </div>
-
     </article>
     <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">read more</a>
   {% endfor %} 
@@ -31,9 +28,10 @@ layout: default
 </div>
 <aside>
 	<b>Archive</b>
-	<ul>
-	{% for post in site.posts %}
-		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate: 21 }}</a></li>
-	{% endfor %}
-	</ul>
+  <ul>
+  {% for post in site.posts %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate: 21 }}</a></li>
+  {% endfor %}
+  </ul>
+  <b>{{ paginator.total_posts }} total posts</b>
 </aside>
